@@ -22,6 +22,8 @@
 
     <!-- Theme CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.min.css">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -183,26 +185,34 @@
             <div class="col-lg-12 text-center">
             	<h3 style = "color:#2C3E50; font-size: 30px;">Web Development</h3>
             </div>
-                <div class="col-sm-4 portfolio-item">
+             
+             <div class="swiper-container">
+             <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         
 
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>My Website</h3>
+                                <h4>My Website!</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
+                                
                             </div>
                         </div>
                         <img src="img/portfolio/link.png" class="img-responsive" alt="Cabin" style = "border-radius: 15px;">  
                     </a>
                 </div>
+                </div>
                 
-                <div class="col-sm-4 portfolio-item">
+                <div class="swiper-slide">
+                <div class="portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>Lit-Bike</h3>
+                                
+                                <h4>Lit-Bike</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/bicycle.png" class="img-responsive" alt="Slice of cake" style = "border-radius: 15px;">
@@ -210,64 +220,84 @@
                         
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                </div>
+
+                <div class="swiper-slide">
+                <div class="portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>QU-ExamBoss</h3>
+                                <h4>QU-ExamBoss</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/Calendar.png" class="img-responsive" alt="Circus tent" style = "border-radius: 15px;">
                     </a>
                 </div>
-                
-            </div>
+                </div>
+            
+             </div><!--End Swiper-->
+             <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+             </div><!--End Swiper-->    
+            </div><!--End Row-->
 
          <div class="row">
             <div class="col-lg-12 text-center">
             	<h3 style = "color:#2C3E50; font-size: 30px;">Java Development</h3>
             </div>
-            <div class="col-sm-4 portfolio-item">
+
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+            <div class="portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>Library System</h3>
+                                <h4>Library System</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/queenslibrary.png" class="img-responsive" alt="Circus tent" style = "border-radius: 15px;">
                     </a>
                 </div>
-            <div class="col-sm-4 portfolio-item">
+            </div>
+            <div class="swiper-slide">
+            <div class="portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>Matrix Calculator</h3>
+                                <h4>Matrix Calculator</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/calculator.png" class="img-responsive" alt="Circus tent" style = "border-radius: 15px;">
                     </a>
             </div>
+            </div>
 
-             <div class="col-sm-4 portfolio-item">
+            <div class="swiper-slide">
+             <div class="portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>Crate-Stacker</h3>
+                                <h4>Crate-Stacker</h4>
+                                <i class="fa fa-search-plus fa-2x"></i>
                             </div>
                         </div>
                         <img src="img/portfolio/Gamepad.png" class="img-responsive" alt="Circus tent" style = "border-radius: 15px;">
                     </a>
                 </div>
+                </div>
 
+            </div><!--End Swiper-->
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            </div><!--End Swiper-->
+         </div><!-- End Row -->
 
-         </div>
-
-
-        </div>
+        </div><!-- End Portfolio Container -->
     </section>
 
     <!-- About Section -->
@@ -945,6 +975,20 @@ Row elements seperated by return
     <script src="js/freelancer.min.js"></script>
 	<!-- Google inline code JavaScript -->
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert" ></script>
+
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    </script>
+
 
 </body>
 

@@ -240,6 +240,7 @@ section.success {
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
+  border-radius: 13px;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
@@ -247,15 +248,15 @@ section.success {
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
-  height: 20px;
+  height: 10px;
   font-size: 20px;
   text-align: center;
   top: 50%;
-  margin-top: -12px;
+  margin-top: -30px;
   color: white;
 }
 .portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
+  margin-top: -30px;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
@@ -600,6 +601,30 @@ mark.white{
 #portfolio{
   padding-top: 70px;
 }
+
+.swiper-container {
+        width: 100%;
+        height: 50%;
+    }
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
 
 
 

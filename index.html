@@ -3,7 +3,7 @@
 
 <head>
 	<title>Cory Crowley</title>
-     <meta property = "og:title" content = "Cory Crowley"/>
+    <meta property = "og:title" content = "Cory Crowley"/>
     <meta property = "og:image" content = "/img/ogimage.png"/>
     <meta property = "og:type" contnet = "website"/>
     <meta property="og:description" content="'You miss 100% of the shots you don't take - wayne gretzky - Michael Scott' - Cory Crowley"/>
@@ -36,15 +36,32 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<style>
+@media (max-width:400px){
+    .socialLinks{
+        
+    }
+    .socialLinks img{
+        height: 100px;
+        width: 100px;
+    }
+    #mobileTrash{
+        display:none;
+        position: absolute;
+    }
+    .socialLinks a{
+        margin-top: 0px;
+    }
+}
+</style>
 </head>
 
 <body id="page-top" class="index">
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
-
+    
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" >
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -83,7 +100,7 @@
 
     <!-- Header -->
     <header>
-        <div class="container" id="maincontent" tabindex="-1" style = "padding-top:130px;">
+        <div class="container-fluid" id="maincontent" tabindex="-1" style = "padding-top:130px;">
             <div class="row">
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/QCBT.png" alt="" id = "faceImage">
@@ -95,70 +112,53 @@
                 </div>
              </div>
 
-             <!--<section id = "mylinks" style = "padding-top: 10px; padding-bottom: 50px;">-->
-                <!-- Button links to my pages (github etc..) -->
+              <!-- Button links to my pages (github etc..) -->
             <div class = "socialLinks">
+                <div class = "container-fluid">
                 <div class = "row" style = "padding-top: 40px;  ">
                     <div class="col-lg-3 col-sm-6 col-xs-6"> 
-                 		
-	                    <a href="https://www.facebook.com/cormac.crowley" class="btn btn-lg btn-outline" style = "border-radius: 20px;
+                        
+                        <a href="https://www.facebook.com/cormac.crowley" class="btn btn-lg btn-outline" style = "border-radius: 20px;
                         border-width: 0px;">
-	                       <b style = "font-size: 28px; color:#2C3E50;">Facebook</b>
+                           <b id = "mobileTrash" style = "font-size: 28px; color:#2C3E50;">Facebook</b>
                            <img src = "img/icons/Facebook.png" style = "padding-top: 15px">
-	                    </a>
+                        </a>
                         
-	                </div>
-	                
-	                <div class="col-lg-3 col-sm-6 col-xs-6">
-	                    <a href="https://www.linkedin.com/in/crowleycoryz/" class="btn btn-lg btn-outline" style = "border-radius: 20px;
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                        <a href="https://www.linkedin.com/in/crowleycoryz/" class="btn btn-lg btn-outline" style = "border-radius: 20px;
                         border-width: 0px;">
-	                       <b style = "font-size: 28px; color:#2C3E50;">Linkedin</b>
+                           <b id = "mobileTrash" style = "font-size: 28px; color:#2C3E50;">Linkedin</b>
                            <img src = "img/icons/Linkedin.png" style = "padding-top: 15px">
-	                    </a>
+                        </a>
                         
-	                </div>
-
-	                <div class="col-lg-3 col-sm-6 col-xs-6">
-	                    <a href="https://github.com/ccrowley96" class="btn btn-lg btn-outline" style = "border-radius: 20px;
-                        border-width: 0px;">
-	                        <b style = "font-size: 28px; color:#2C3E50;">Github</b>
-                            <img src = "img/icons/github2.png" style = "padding-top: 15px">
-	                    </a>
-                        
-	                </div>
+                    </div>
 
                     <div class="col-lg-3 col-sm-6 col-xs-6">
-                        <a href="https://soundcloud.com/ccrowley96" class="btn btn-lg btn-outline" style = "border-radius: 20px;
+                        <a href="https://github.com/ccrowley96" class="btn btn-lg btn-outline" id = "mobileMargin" style = "border-radius: 20px;
                         border-width: 0px;">
-                            <b style = "font-size: 28px; color:#2C3E50;">Soundcloud</b>
+                            <b id = "mobileTrash" style = "font-size: 28px; color:#2C3E50;">Github</b>
+                            <img src = "img/icons/github2.png" style = "padding-top: 15px">
+                        </a>
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-xs-6">
+                        <a href="https://soundcloud.com/ccrowley96" class="btn btn-lg btn-outline" id = "mobileMargin" style = "border-radius: 20px;
+                        border-width: 0px;">
+                            <b id = "mobileTrash" style = "font-size: 28px; color:#2C3E50;">Soundcloud</b>
                             <img src = "img/icons/Soundcloud.png" style = "padding-top: 15px">
                         </a>
                         
                     </div>
-	              
+                  
                 </div>
                 </div>
-            </section>
+                </div>
+                <!-- end square social links-->
 
-                <!-- Social Img Links (github etc..) 
-                <div class = "row" style = "padding-top: 15px;">
-	                <div class="col-lg-3  text-center">
-	                <img src = "img/icons/Facebook.png">
-	                </div>
-
-	                <div class="col-lg-3  text-center">
-	                <img src = "img/icons/Linkedin.png">
-	                </div>
-
-	                <div class="col-lg-3  text-center">
-	                <img src = "img/icons/github2.png">
-	                </div>
-
-                    <div class="col-lg-3  text-center">
-                    <img src = "img/icons/soundcloud.png">
-                    </div>
-                </div>-->
-                <div class = "row">
+                <div class = "row" style = "margin-bottom: 20px;">
                 <!-- Soundcloud Header Embed -->
                  <iframe class = "col-lg-6 col-sm-6 col-xs-12" width="20%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/312865758&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false&amp;show_artwork=true&amp;color=2C3E50&amp;theme_color=FAF0E6&amp;download=false&amp;font=Helvetica&amp;sharing=false" style = "padding-top: 50px; padding-bottom: 5px;"></iframe>
 
@@ -168,12 +168,13 @@
                 
                 </div>
 
+        
         </div>
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" style = "padding-top: 40px;">
-        <div class="container">
+    <section id="portfolio" style = "padding-top: 40px; padding-bottom: 0px;">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 style = "color:#2C3E50;">Project Portfolio</h2>
@@ -347,8 +348,8 @@
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about" style = "padding-top: 40px;">
-        <div class="container">
+    <section class="success" id="about" style = "padding-top: 40px; padding-bottom: 15px;">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About Me</h2>
@@ -358,17 +359,18 @@
             
 	<!-- About Section Subtitles -->
          <div class = "aboutme">
+            <div class = "container-fluid">
             <div class="row">
                 <div class="col-lg-4 ">
-                <h3 class = "text-center">Life.get<mark class = "white">Origin</mark>()</h3>
+                <h3 style = "font-size: 25px;" class = "text-center">Life.get<mark class = "white">Origin</mark>()</h3>
                     <p>I was born in 1996 in Eureka California and was raised in the hills of Kneeland nearby. Humboldt County, on the Pacific Northwest of California, is the place I call home. I'm the youngest sibling of three. Lina is the oldest: beautiful, laughing, kind and worldy - she's the smartest of the three. Tim, is two years my senior. He's been my closest friend for my entire life. I look to him for everything and am now living with him at Queen's. My mom is loving, selfless, and the most amazing person in my life. She is a retired Occupational Therapist who now works as a puppeteer with <u><a href = "http://www.quackandwabbit.com/" style = "color:white;">Quack and Wabbit</a></u> to teach compassionate communication and other life skills to children in schools. My dad works as a <u><a href ="http://janssenlaw.com/" style = "color:white;"> Lawyer</a></u> in Eureka and inspires me with his passion for seeking justice for his clients. He is incredibly smart, well spoken, funny, and a loving father.</p>
                 </div>
                 <div class="col-lg-4">
-                <h3 class = "text-center">Life.get<mark class = "white">Queens</mark>()</h3>
+                <h3 style = "font-size: 25px;" class = "text-center">Life.get<mark class = "white">Queens</mark>()</h3>
                     <p>After 18 years on the west-coast, I decided to make a drastic change: move to Eastern Canada and commit to 4 years in the Direct Entry Electrical And Computer Engineering Innovation Stream at Queen's - quite a mouthful. All of my friends stayed in the States, most in California, studying at UC's, CSU's, and private schools. My dot on our school newspaper’s class of ‘15 university map left its borders completely. Three months after senior graduation, I packed my temperate California clothes, tank-tops, swimming suit, and DJ board to leave for Kingston, Ontario. I climbed the grease pole, kicked and slammed my purple jacket, passed 112, dyed myself purple, survived my first Ontario winter, and got to know some amazing people. I'm studying how computers work - starting with the electrical components - bleep boop 01010111.</p>
                 </div>
                 <div class="col-lg-4">
-                <h3 class = "text-center">Life.get<mark class = "white">2017</mark>()</h3>
+                <h3 style = "font-size: 25px;" class = "text-center">Life.get<mark class = "white">2017</mark>()</h3>
                 <p style = "text-align: center;">Second year comp eng has been pretty intense.  This year I've taken:<br>
                 
                 </p>
@@ -410,12 +412,13 @@
 
 
         </div>
+        </div>
     </div>
     </section>
 
     <!-- Music Section -->
     <section class = "mymusic" id="music" style = "background-color: linen; padding-top: 80px; padding-bottom: 45px;">
-        <div class="container" >
+        <div class="container-fluid">
             
             
         
@@ -451,14 +454,12 @@
             <iframe class = "col-lg-12 col-sm-12 col-xs-12" src="https://embed.spotify.com/?uri=spotify%3Auser%3A1221481626%3Aplaylist%3A0ZGMciiNpQhLnsnFeFAiGU" width="350" height="400" frameborder="0" allowtransparency="true" style = "padding-top: 0px; padding-bottom: 0px;"></iframe> 
             </div>
             </div>
-            
-            
 
-            </div>
+            </div><!--end row-->
 
             <div class = "row">
                 <div class = "col-lg-12 col-sm-12 col-xs-12 text-center">
-                    <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:user:1221481626&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; margin-left: 105px;" allowtransparency="true"></iframe>
+                    <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:user:1221481626&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; display:block;margin:auto;padding-left: 70px;" allowtransparency="true"></iframe>
                 </div>
             </div>
 
@@ -471,7 +472,7 @@
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row" style = "margin-bottom: -40px;">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
@@ -514,7 +515,7 @@
             </div>
         </div>
         <div class="footer-below">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         Copyright &copy; Cory Crowley 2017
